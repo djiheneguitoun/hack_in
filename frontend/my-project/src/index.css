@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Stem-Medium';
+    src: local('Stem-Medium'), url('./Font/stem-medium.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Stem-Bold';
+    src: local('Stem-Bold'), url('./Font/stem-bold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'StemRegular';
+    src:local('Stem-Regular'), url('./Font/stem-regular.otf') format('opentype');
+  }
+
+body
+{
+    font-family: 'Stem-Medium';
+    font-family: 'Stem-Bold';
+    font-family: 'StemRegular';
+}
 .BackAcceuil {
     background-image: url('./Img/backAcceuil.png');
     background-size: cover;
