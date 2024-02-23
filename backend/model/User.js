@@ -8,6 +8,10 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
+    experience:{
+        type: String,
+        required: false,
+    },
     email: {
         type: String,
         required: true,
@@ -19,7 +23,7 @@ const userSchema = new Schema({
     },
     sexe: {
         type: String,
-        enum: ['male', 'female', 'other'],
+        enum: ['male', 'female'],
         required: true,
     },
     password: {
@@ -33,7 +37,7 @@ const userSchema = new Schema({
     },
     role: {
         type: String,
-        default: 'User' // Default role is 'User'
+        default: 'User' 
     }
 }, { timestamps: true });
 
@@ -55,7 +59,7 @@ const adminSchema = new Schema({
 });
 
 const doctorSchema = new Schema({
-    //lien doc
+    
     username: {
         type: String,
         required: true,
@@ -71,7 +75,7 @@ const doctorSchema = new Schema({
     },
     sexe: {
         type: String,
-        enum: ['male', 'female', 'other'],
+        enum: ['male', 'female'],
         required: true,
     },
     password: {
@@ -94,11 +98,79 @@ const doctorSchema = new Schema({
     role: {
         type: String,
         default: 'Doctor'
+    },
+   
+    lien_doc:{
+        type:String,
+       required:true,
+    },
+    validated: {
+        type:Boolean,
+        default:false,
+    },
+    liste_rendezvous: {
+        type: [String]
+    },
+    rate:{
+        
+        enum: [1,1.5, 2,2.5,3,3.5,4,4.5,5],
+        type:  Number,
+        default:null
+    },
+    comment: {
+        type: [String]
+    },
+});
+
+
+const rendezvousSchema = new Schema({
+    heureDebut: {
+        type: String,
+        required: true
+    },
+    heureFin: {
+        type: String,
+        required: true
+    },
+    doctorName: {
+        type: String,
+        required: true
+    },
+    patientName: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: Date,
+        required: true
+    }
+});
+
+
+const creneaulibreSchema = new Schema({
+    heureDebut: {
+        type: String,
+        required: true
+    },
+    heureFin: {
+        type: String,
+        required: true
+    },
+    doctorName: {
+        type: String,
+        required: true
+    },
+    
+    date: {
+        type: Date,
+        required: true
     }
 });
 
 module.exports = {
     User: mongoose.model("User", userSchema),
     Admin: mongoose.model("Admin", adminSchema),
-    Doctor: mongoose.model("Doctor", doctorSchema)
+    Doctor: mongoose.model("Doctor", doctorSchema),
+    Rendezvous:mongoose.model("Rendezvous", rendezvousSchema),
+    Creneaulibre:mongoose.model("Creneaulibre", creneaulibreSchema),
 };
