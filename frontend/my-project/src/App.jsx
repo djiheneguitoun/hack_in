@@ -1,10 +1,10 @@
-import React from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
+import Acceuil from './Pages/Acceuil';
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Acceuil/>
+
   )
 }
