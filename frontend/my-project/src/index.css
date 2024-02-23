@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.BackAcceuil {
+    background-image: url('./Img/backAcceuil.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Assurez-vous que l'image ne se répète pas */
+    background-position: center; /* Centrez l'image */
+    height: 100vh; /* Prendre la totalité de la hauteur de la fenêtre */
+    width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
+}
+
+.BackAdmin {
+    background-image: url('./Img/Background admin.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Assurez-vous que l'image ne se répète pas */
+    background-position: center; /* Centrez l'image */
+    height: 100vh; /* Prendre la totalité de la hauteur de la fenêtre */
+    width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
+}
+
+.BackDoctor {
+    background-image: url('./Img/Doctor background 1.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Assurez-vous que l'image ne se répète pas */
+    background-position: center; /* Centrez l'image */
+    height: 100vh; /* Prendre la totalité de la hauteur de la fenêtre */
+    width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
+}
+
+@media (max-width: 639px) {
+    .BackAcceuil {
+        background-image: url('./Img/Background mobile.png');
+        background-size: cover;
+    }
+}
+
