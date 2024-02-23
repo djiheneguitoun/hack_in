@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: 'Stem-Medium';
-    src: local('Stem-Medium'), url('./Font/stem-medium.otf') format('opentype');
+    src: local('Stem-Medium'), url('./Font/Stem-Medium.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'Stem-Bold';
-    src: local('Stem-Bold'), url('./Font/stem-bold.otf') format('opentype');
+    src: local('Stem-Bold'), url('./Font/Stem-Bold.otf') format('Woff2');
   }
   
   @font-face {
-    font-family: 'StemRegular';
-    src:local('Stem-Regular'), url('./Font/stem-regular.otf') format('opentype');
+    font-family: 'Stem-Regular';
+    src:local('Stem-Regular'), url('./Font/Stem-Regular.otf') format('opentype');
   }
 
 body
