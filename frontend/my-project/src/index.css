@@ -23,6 +23,7 @@ body
     font-family: 'Stem-Bold';
     font-family: 'StemRegular';
 }
+
 .BackAcceuil {
     background-image: url('./Img/backAcceuil.png');
     background-size: cover;
