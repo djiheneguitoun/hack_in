@@ -7,7 +7,7 @@ import DocPartRight from "../Components/DocPartRight";
 function Doctor3() {
 
     return(
-        <div className="BackDoctor3">
+        <div className="BackDoctor3 font-[StemRegular]">
             <NavDoctor/>
             <div className="flex flex-row justify-between">
                 <DocPartLeft/>

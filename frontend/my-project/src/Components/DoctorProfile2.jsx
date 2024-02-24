@@ -4,7 +4,7 @@ import Avis from '../Img/avis.svg';
 function DoctorProfile2({ name, place, desc, ccp }) {
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center font-[StemRegular]">
             <div className="py-6 w-[90%]">
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-row items-center space-x-4">

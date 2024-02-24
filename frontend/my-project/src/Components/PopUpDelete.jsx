@@ -12,7 +12,7 @@ function PopUpDelete({ texte, onClose2 }) {
 
     return (
         
-        <div className="fixed inset-0 z-40 flex items-center justify-center backdrop-blur-xs bg-darkBlue bg-opacity-40">
+        <div className="fixed inset-0 z-40 flex items-center justify-center backdrop-blur-xs bg-darkBlue bg-opacity-40 font-[StemRegular]">
             <div className="flex flex-col items-start justify-center px-6 py-6 w-[35%] space-y-6 relative bg-white rounded-2xl">
                 <img src={Cross} alt="Cross" className="absolute w-4 h-4 cursor-pointer top-6 right-6" onClick={handleClose2}/>
                 <span className="px-2"> {texte} </span>

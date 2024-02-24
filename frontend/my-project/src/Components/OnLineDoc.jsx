@@ -1,12 +1,12 @@
 import React from "react";
 import PatientOnLine from "./PatientOnLine";
 
-function OnLine({patients}) {
+function OnLineDoc({doctors}) {
 
-    const generatePatients = () => {
-        return patients.map((patient, index) => (
+    const generatedoctors = () => {
+        return doctors.map((doctor, index) => (
             <div key={index}>
-                <PatientOnLine name={patient.name} date={patient.date} hour1={patient.hour1} hour2={patient.hour2}                    
+                <PatientOnLine name={doctor.name} date={doctor.date} hour1={doctor.hour1} hour2={doctor.hour2}                    
                 />
             </div>
         ));
@@ -23,11 +23,11 @@ function OnLine({patients}) {
                     <span>Ending hour</span>
                     <span>Link</span>
                 </div>
-                    {generatePatients()}
+                    {generatedoctors()}
             </div>
    
         </div>
     );
 }
 
-export default OnLine
+export default OnLineDoc

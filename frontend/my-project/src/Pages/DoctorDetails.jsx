@@ -4,6 +4,7 @@ import DoctorProfile2 from "../Components/DoctorProfile2";
 import Review from "../Components/Review";
 import ReviewUp from "../Components/ReviewUp";
 import ReviewDown from "../Components/ReviewDown";
+import NavUser from "../Components/NavUser";
 
 function DoctorDetails({reviews, user}) {
 
@@ -17,8 +18,8 @@ function DoctorDetails({reviews, user}) {
     };
 
     return(
-        <div className="">
-            <NavDoctor/>
+        <div className="pb-20 font-[StemRegular]">
+            <NavUser/>
             <DoctorProfile2 name={user.name} place={user.place} desc={user.desc} ccp={user.ccp} />
             <div className="flex flex-col items-center">
                 <div className="space-y-6 w-[90%]">

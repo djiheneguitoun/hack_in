@@ -1,12 +1,12 @@
 import React from "react";
 import PatientOnSite from "./PatientOnSite";
 
-function OnSite({patients}) {
+function OnSiteDoc({doctors}) {
 
-    const generatePatients = () => {
-        return patients.map((patient, index) => (
+    const generatedoctors = () => {
+        return doctors.map((doctor, index) => (
             <div key={index}>
-                <PatientOnSite name={patient.name} date={patient.date} hour1={patient.hour1} hour2={patient.hour2}                    
+                <PatientOnSite name={doctor.name} date={doctor.date} hour1={doctor.hour1} hour2={doctor.hour2}                    
                 />
             </div>
         ));
@@ -22,7 +22,7 @@ function OnSite({patients}) {
                     <span>Starting hour</span>
                     <span>Ending hour</span>
                 </div>
-                {generatePatients()}
+                {generatedoctors()}
                     
             </div>
    
@@ -30,4 +30,4 @@ function OnSite({patients}) {
     );
 }
 
-export default OnSite
+export default OnSiteDoc

@@ -18,8 +18,8 @@ export const Login =()=> {
 
     
   return (
-    <div className='login w-100vh flex flex-col items-end'>
-        <div className='space-y-6 p-16'>
+    <div className='login w-100vh flex flex-col items-end font-[StemRegular]'>
+        <div className='p-16 space-y-6'>
             <p className='lg:w-[450px]  mx-auto text-left w-full text-[#040054] sm:text-[50px] text-[100px] font-[Stem-Bold] '>
                  Log In
             </p>

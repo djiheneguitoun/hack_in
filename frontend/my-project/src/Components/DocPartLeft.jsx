@@ -2,7 +2,7 @@ import React from "react";
 
 function DocPartLeft() {
     return (
-        <div className="px-16 w-[50%] py-10">
+        <div className="px-16 w-[50%] py-10 font-[StemRegular]">
             <div className="w-[100%] mt-2">
                 <span>Username</span>
                 <input className="w-[100%] bg-LightGreen p-4 rounded-md mt-2">
