@@ -10,6 +10,9 @@ import User from './Components/User';
 import Users from './Pages/Users';
 import DoctorDetails from './Pages/DoctorDetails';
 import DoctorProfile2 from './Components/DoctorProfile2';
+import Settings from './Pages/Settings';
+import Login from './Pages/login';
+import Signup from './Pages/Signup'
 
 
 
@@ -66,6 +69,15 @@ export default function App() {
         <Route path="/doctor3" element={<Doctor3 />} />
         <Route path="/users" element={<Users users={users} />} />
         <Route path="/doctorDetails" element={<DoctorDetails reviews={reviews} user={user} />} />
+         <Route path="/" element={<Acceuil/>} />
+          <Route path="/admin" element={<Admin doctors={doctors} />} />
+          <Route path="/doctor" element={<Doctor onsites={patients} onlines={patients}/>} />
+          <Route path="/doctor2" element={<Doctor2/>} />
+          <Route path="/doctor3" element={<Doctor3/>} />
+
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/settings" element={<Settings/>}/>
       </Routes>
     </Router>
 
