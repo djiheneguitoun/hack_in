@@ -2,12 +2,12 @@ import React from "react"
 import NavDoctor from "../Components/NavDoctor"
 
 const Settings =()=>{
-    {/*const [user , handleInputChange] = props;
-    const [user, setuser] = useState({
-      username: '',
-      email:'',
+    const [user , handleInputChange] = props;
+    const [user,] = useState({
+      username: 'Bendahmane',
+      email:'Nesrine@gmail.com',
       password:'',
-    });*/}
+    });
 return (
 <div className="BackDoctor2" >
     <NavDoctor/>
