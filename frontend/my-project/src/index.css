@@ -33,6 +33,15 @@ body
     width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
 }
 
+.signup{
+    background-image: url('./Img/signup.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Assurez-vous que l'image ne se répète pas */
+    background-position: center; /* Centrez l'image */
+    height: 100vh; /* Prendre la totalité de la hauteur de la fenêtre */
+    width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
+}
+
 .settingsBack{
     background-image: url('./Img/Profile page User.png');
     background-size: cover;

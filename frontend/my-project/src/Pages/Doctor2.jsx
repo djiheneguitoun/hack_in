@@ -38,8 +38,8 @@ function Doctor2() {
             <div className="w-[40%]">
                 <span className="text-2xl font-bold text-blue"> Time Slots </span>    
 
-                <div className="flex flex-row p-4 bg-LightGreen w-[100%] items-center mt-4 cursor-pointer">
-                    <span className="text-blue text-opacity-30"> start date : end date </span>
+                <div className="flex flex-row mt-4 bg-LightGreenitems-center">
+                    <input className="p-4 text-blue text-opacity-30 bg-LightGreen  w-[100%] " placeholder=" start date : end date "></input>
                 </div>
             </div>
             
