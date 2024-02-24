@@ -1,0 +1,669 @@
+{
+	"id": "777e2a76-cb45-4b8d-8f48-3aeaea89e28e",
+	"name": "heyyyy",
+	"timestamp": "2024-02-24T06:25:01.123Z",
+	"collection_id": "33176387-16b52c14-f84a-429a-b894-cbce702c0be8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 17,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-02-24T06:24:59.751Z",
+	"totalFail": 20,
+	"results": [
+		{
+			"id": "8ab1889d-b730-4fc4-a186-0aef37e9b848",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/signup",
+			"time": 48,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"User created successfully": false,
+				"User already exists": true
+			},
+			"testPassFailCounts": {
+				"User created successfully": {
+					"pass": 0,
+					"fail": 1
+				},
+				"User already exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"User created successfully": false,
+					"User already exists": true
+				}
+			]
+		},
+		{
+			"id": "0c0839b4-7be4-4339-bd80-117967be6811",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/login",
+			"time": 114,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Login successful": true,
+				"User not found": false,
+				"Invalid credentials": false
+			},
+			"testPassFailCounts": {
+				"Login successful": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User not found": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Invalid credentials": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				114
+			],
+			"allTests": [
+				{
+					"Login successful": true,
+					"User not found": false,
+					"Invalid credentials": false
+				}
+			]
+		},
+		{
+			"id": "a2dde322-9b8e-4de1-937c-64b1de0e085f",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/signupdoctors",
+			"time": 40,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Doctor created successfully": false,
+				"Doctor already exists": true
+			},
+			"testPassFailCounts": {
+				"Doctor created successfully": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Doctor already exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Doctor created successfully": false,
+					"Doctor already exists": true
+				}
+			]
+		},
+		{
+			"id": "bd1f7074-7e13-41b2-a955-ba2e99225c13",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/65d98b16536a5512f2a33530",
+			"time": 49,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Doctor deleted successfully": true,
+				"Doctor not found": false
+			},
+			"testPassFailCounts": {
+				"Doctor deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Doctor not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"Doctor deleted successfully": true,
+					"Doctor not found": false
+				}
+			]
+		},
+		{
+			"id": "a5585992-1f48-4157-8cf2-36f9fd98961c",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/validate/65d9742e8bd91ea62e43fc50",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Doctor validated successfully": true,
+				"Doctor not found": false
+			},
+			"testPassFailCounts": {
+				"Doctor validated successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Doctor not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Doctor validated successfully": true,
+					"Doctor not found": false
+				}
+			]
+		},
+		{
+			"id": "78a01bb6-57f0-4162-b467-230d9ace31d1",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/modifyExp/65d96c898bd91ea62e43fc3d",
+			"time": 54,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"User experience modified successfully": true,
+				"User not found": false
+			},
+			"testPassFailCounts": {
+				"User experience modified successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				54
+			],
+			"allTests": [
+				{
+					"User experience modified successfully": true,
+					"User not found": false
+				}
+			]
+		},
+		{
+			"id": "07b625a8-5165-4ab3-8049-8e92acc80b52",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/addcreneau",
+			"time": 45,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Creneau libre created successfully": true,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Creneau libre created successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Creneau libre created successfully": true,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "ef0da64f-365b-47aa-a6c3-71a6cc9caf86",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/addrendezvous",
+			"time": 46,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Rendezvous created successfully": true,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Rendezvous created successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Rendezvous created successfully": true,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "c431d7f2-4c40-4646-9449-a50d31be07e6",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/appointments/djihene",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Appointments found for the doctor": true,
+				"No appointments found for the doctor": false
+			},
+			"testPassFailCounts": {
+				"Appointments found for the doctor": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No appointments found for the doctor": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Appointments found for the doctor": true,
+					"No appointments found for the doctor": false
+				}
+			]
+		},
+		{
+			"id": "dbbcc776-39f0-4200-b56b-b80df427e114",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/search/meskiana",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Appointments found for the doctor": true,
+				"No appointments found for the doctor": false
+			},
+			"testPassFailCounts": {
+				"Appointments found for the doctor": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No appointments found for the doctor": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Appointments found for the doctor": true,
+					"No appointments found for the doctor": false
+				}
+			]
+		},
+		{
+			"id": "75b96b07-3c61-4cc6-ab5f-a9906bb00fd4",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/creneaulibre/djihene/2024-03-25",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Creneaulibre found for the doctor": true,
+				"No creneaulibre found for the doctor": false
+			},
+			"testPassFailCounts": {
+				"Creneaulibre found for the doctor": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No creneaulibre found for the doctor": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				39
+			],
+			"allTests": [
+				{
+					"Creneaulibre found for the doctor": true,
+					"No creneaulibre found for the doctor": false
+				}
+			]
+		},
+		{
+			"id": "6eed2d62-0eab-4cb1-af96-561cf7f7becd",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/liste_doctors",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Doctors retrieved successfully": true,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Doctors retrieved successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Doctors retrieved successfully": true,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "c336accb-6dcd-417a-992a-311b7b348dbc",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/65d9742e8bd91ea62e43fc50",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Doctor profile retrieved successfully": true,
+				"Doctor not found": false,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Doctor profile retrieved successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Doctor not found": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Doctor profile retrieved successfully": true,
+					"Doctor not found": false,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "b1816612-353b-447d-84cb-f6cac2fc4cb4",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/validated",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validated doctors retrieved successfully": true,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Validated doctors retrieved successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Validated doctors retrieved successfully": true,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "f6079528-acdf-4287-a087-f21eabd089c8",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/search",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Users found with experience matching keyword": true,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Users found with experience matching keyword": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Users found with experience matching keyword": true,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "52b7a823-3a36-4900-ace3-519913d2c0b5",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/getexperiences",
+			"time": 47,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Experiences retrieved successfully": true,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Experiences retrieved successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"Experiences retrieved successfully": true,
+					"Internal server error": false
+				}
+			]
+		},
+		{
+			"id": "176cc6b7-ef0c-4b4b-b194-f222d24dabdc",
+			"name": "New Request",
+			"url": "http://localhost:5000/users/doctors/65d9742e8bd91ea62e43fc50",
+			"time": 85,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comment added successfully": true,
+				"Doctor not found": false,
+				"Internal server error": false
+			},
+			"testPassFailCounts": {
+				"Comment added successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Doctor not found": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Internal server error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				85
+			],
+			"allTests": [
+				{
+					"Comment added successfully": true,
+					"Doctor not found": false,
+					"Internal server error": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 854,
+	"collection": {
+		"requests": [
+			{
+				"id": "8ab1889d-b730-4fc4-a186-0aef37e9b848",
+				"method": "POST"
+			},
+			{
+				"id": "0c0839b4-7be4-4339-bd80-117967be6811",
+				"method": "POST"
+			},
+			{
+				"id": "a2dde322-9b8e-4de1-937c-64b1de0e085f",
+				"method": "POST"
+			},
+			{
+				"id": "bd1f7074-7e13-41b2-a955-ba2e99225c13",
+				"method": "DELETE"
+			},
+			{
+				"id": "a5585992-1f48-4157-8cf2-36f9fd98961c",
+				"method": "PUT"
+			},
+			{
+				"id": "78a01bb6-57f0-4162-b467-230d9ace31d1",
+				"method": "PUT"
+			},
+			{
+				"id": "07b625a8-5165-4ab3-8049-8e92acc80b52",
+				"method": "POST"
+			},
+			{
+				"id": "ef0da64f-365b-47aa-a6c3-71a6cc9caf86",
+				"method": "POST"
+			},
+			{
+				"id": "c431d7f2-4c40-4646-9449-a50d31be07e6",
+				"method": "GET"
+			},
+			{
+				"id": "dbbcc776-39f0-4200-b56b-b80df427e114",
+				"method": "GET"
+			},
+			{
+				"id": "75b96b07-3c61-4cc6-ab5f-a9906bb00fd4",
+				"method": "GET"
+			},
+			{
+				"id": "6eed2d62-0eab-4cb1-af96-561cf7f7becd",
+				"method": "GET"
+			},
+			{
+				"id": "c336accb-6dcd-417a-992a-311b7b348dbc",
+				"method": "GET"
+			},
+			{
+				"id": "b1816612-353b-447d-84cb-f6cac2fc4cb4",
+				"method": "GET"
+			},
+			{
+				"id": "f6079528-acdf-4287-a087-f21eabd089c8",
+				"method": "POST"
+			},
+			{
+				"id": "52b7a823-3a36-4900-ace3-519913d2c0b5",
+				"method": "GET"
+			},
+			{
+				"id": "176cc6b7-ef0c-4b4b-b194-f222d24dabdc",
+				"method": "POST"
+			}
+		]
+	}
+}

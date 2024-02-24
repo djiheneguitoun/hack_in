@@ -36,6 +36,36 @@ const signup= async (req, res, next) => {
     }
 };
 
+
+const signupdoctor = async (req, res, next) => {
+    const { username, email, password, age, sexe, telephone, ccp, address, lien_doc } = req.body;
+
+    try {
+        // Check if doctor already exists
+        const existingDoctor = await Doctor.findOne({ email });
+        if (existingDoctor) {
+            return res.status(400).json({ message: "Doctor already exists" });
+        }
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const newDoctor = new Doctor({
+            username,
+            email,
+            password: hashedPassword,
+            age,
+            sexe,
+            telephone,
+            ccp,
+            address,
+            lien_doc
+        });
+        await newDoctor.save();
+        res.status(201).json({ message: "Doctor created successfully" });
+    } catch (error) {
+        next(error);
+    }
+};
+
 //------------------------------------------------------------------------------------
 
 const login=async (req, res, next) => {
@@ -163,7 +193,144 @@ const showcreneaulibre=async(req,res,next)=>{
         next(error);
     
 }
-}
+};
+
+
+const liste_doctors= async (req, res) => {
+    try {
+        const doctors = await Doctor.find(); 
+        res.json(doctors); 
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+
+
+const  getDoctorProfile = async (req, res) => {
+    try {
+        const doctor = await Doctor.findById(req.params.id);
+        if (!doctor) {
+            return res.status(404).json({ message: 'Doctor not found' });
+        }
+        res.json(doctor);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+
+const addcreaneau=async (req, res) => {
+    try {
+        const { heureDebut, heureFin, doctorName, date } = req.body;
+
+        // Create a new creneau libre instance
+        const newCreneau = new Creneaulibre({
+            heureDebut,
+            heureFin,
+            doctorName,
+            date
+        });
+
+        // Save the new creneau libre to the database
+        await newCreneau.save();
+
+        res.status(201).json({ message: "Creneau libre created successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+const validated_doctors= async (req, res) => {
+    try {
+        const validatedDoctors = await Doctor.find({ validated: true }).sort({ rate: -1 });
+        
+        res.json(validatedDoctors);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+const addrendezvous= async (req, res) => {
+    try {
+        const { heureDebut, heureFin, doctorName, patientName, date } = req.body;
+
+        // Create a new rendezvous instance
+        const newRendezvous = new Rendezvous({
+            heureDebut,
+            heureFin,
+            doctorName,
+            patientName,
+            date
+        });
+
+        // Save the new rendezvous to the database
+        await newRendezvous.save();
+
+        res.status(201).json({ message: "Rendezvous created successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+
+const search_illness =async (req, res) => {
+    try {
+        const keyword = req.body; 
+        console.log(keyword);
+        const regex = new RegExp(keyword, 'i');
+
+        const users = await User.find({ experience: regex });
+
+        res.json(users);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+
+const getexperiences=async (req, res) => {
+    try {
+        const users = await User.find();
+
+        const experiences = users.map(user => user.experience).filter(Boolean);
+
+        res.json(experiences);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+const addcomment=async (req, res) => {
+    const { id } = req.params;
+    const {comment } = req.body;
+
+    try {
+        const doctor = await Doctor.findById(id);
+
+        if (!doctor) {
+            return res.status(404).json({ message: 'Doctor not found' });
+        }
+
+        doctor.comment.push(comment)
+
+        await doctor.save();
+
+        res.status(200).json({ message: 'Comment added successfully' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+
+
 
 exports.showcreneaulibre=showcreneaulibre;
 exports.searchbyadress=searchbyadress;
@@ -173,4 +340,13 @@ exports.validatedoctor=validatedoctor;
 exports.deleteDoctor=deleteDoctor;
 exports.login=login;
 exports.signup=signup;
+exports.liste_doctors=liste_doctors;
+exports.signupdoctor = signupdoctor;
+exports.getDoctorProfile=getDoctorProfile;
+exports.addcreaneau=addcreaneau;
+exports.validated_doctors=validated_doctors;
+exports.addrendezvous=addrendezvous;
+exports.search_illness=search_illness;
+exports.getexperiences=getexperiences;
+exports.addcomment=addcomment;
 
