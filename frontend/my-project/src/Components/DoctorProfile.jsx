@@ -1,10 +1,17 @@
 import React from "react";
 import Avis from '../Img/avis.svg';
+import { useNavigate } from "react-router-dom";
 
 function DoctorProfile({ name, place, desc }) {
 
+    const navigate = useNavigate();
+
+    const handleMoreDetails = () => {
+        navigate('/user/doctors/moreDetails');
+    };
+
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center font-[StemRegular]">
             <div className="py-6 bg-gray bg-opacity-87 w-[90%]">
                 <div className="flex flex-row justify-between px-10 ">
                     <div className="flex flex-row items-center space-x-4">
@@ -17,7 +24,7 @@ function DoctorProfile({ name, place, desc }) {
                     <span className="w-[100%]"> {desc}</span>
                 </div>
                 <div className="flex flex-row justify-end px-10 pt-6">
-                    <button className="px-10 py-2 text-xl font-bold text-white bg-blue">Get more details</button>
+                    <button className="px-10 py-2 text-xl text-white font-[Stem-bold] bg-blue" onClick={handleMoreDetails}>Get more details</button>
                 </div>
             </div>
         </div>

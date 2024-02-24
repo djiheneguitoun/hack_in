@@ -4,7 +4,6 @@ import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
 import NavDoctor from "../Components/NavDoctor";
 
-
 function Doctor2() {
 
     const [date, setDate] = useState(null);
@@ -16,7 +15,7 @@ function Doctor2() {
     };
 
     return(
-        <div className="BackDoctor2">
+        <div className="overflow-x-hidden BackDoctor2 font-[StemRegular]">
             <NavDoctor/>
             <div className="flex flex-col items-center p-20">
                 

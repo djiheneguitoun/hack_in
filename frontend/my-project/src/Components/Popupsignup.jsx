@@ -4,10 +4,10 @@ import React from 'react'
 function Popup({ visible, onClose }) {
     if (!visible) return null;
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
-        <div className="h-64 w-96 bg-white flex flex-col justify-center items-center">
+        <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-[StemRegular]">
+        <div className="flex flex-col items-center justify-center h-64 bg-white w-96">
         <button
-              className="place-self-end text-item-col text-md bg-sidebar pr-5" 
+              className="pr-5 place-self-end text-item-col text-md bg-sidebar" 
               onClick={onClose}
             >
               x

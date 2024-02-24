@@ -14,7 +14,7 @@ function Users({ users }) {
     };
 
     return (
-        <div className="space-y-10">
+        <div className="pb-20 space-y-10 font-[StemRegular]">
             <NavUser />
             <NavFiltre />
             {generateUsers()}

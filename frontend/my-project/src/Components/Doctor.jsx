@@ -13,7 +13,7 @@ function Doctor({ name, email, number, onSuccessClick, onDelete }) {
     };
     
     return (
-        <div className="flex flex-row items-center justify-between px-10 py-4">
+        <div className="flex flex-row items-center justify-between px-10 py-4 font-[StemRegular]">
             <span className="text-x-[3px]">{name}</span>
             <span className="text-x-[3px]">{email}</span>
             <span className="text-x-[3px]">{number}</span>

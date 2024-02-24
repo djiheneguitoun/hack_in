@@ -1,20 +1,22 @@
 import React from "react";
 import { useState } from "react";
-import NavDoctor from "../Components/NavDoctor";
+import NavUser from "../Components/NavUser"; 
 import OnSite from "../Components/OnSite";
 import OnLine from "../Components/OnLine";
+import OnSiteDoc from "../Components/OnSiteDoc";
+import OnLineDoc from "../Components/OnLineDoc";
 
-function Doctor({onsites, onlines}) {
+function UserAppointement({onsites, onlines}) {
 
     return (
-        <div className="overflow-x-hidden BackDoctor font-[StemRegular]">
-            <NavDoctor/>
+        <div className="pb-10 overflow-x-hidden BackDoctor font-[StemRegular]">
+            <NavUser/>
             <div className="overflow-y-auto">
                 <div className="flex flex-col items-center ">
-                    <OnSite patients={onsites}/>
+                    <OnSiteDoc doctors={onsites}/>
                 </div> 
                 <div className="flex flex-col items-center ">
-                    <OnLine patients={onlines}/>
+                    <OnLineDoc doctors={onlines}/>
                 </div>       
             </div>
      
@@ -23,4 +25,4 @@ function Doctor({onsites, onlines}) {
     );
 }
 
-export default Doctor
+export default UserAppointement

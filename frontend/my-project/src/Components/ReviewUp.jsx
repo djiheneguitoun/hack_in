@@ -14,7 +14,7 @@ function ReviewUp() {
     };
 
     return (
-        <div className="px-16 w-[100%] pt-10 flex flex-row justify-between">
+        <div className="px-16 w-[100%] pt-10 flex flex-row justify-between font-[StemRegular]">
             <div className="w-[45%]">
                 <span >Select Date</span>
                 <div className="bg-LightGreen w-[100%] rounded p-4 mb-8 mt-4">

@@ -15,28 +15,28 @@ const Signupcomp = () => {
     
       setPassword(value);
       console.log(password)
-    }
+    };
    
     const handleSetUserName=(value)=>
     {
         setUserName(value);
         console.log(UserName);
-      }
+      };
       const handleSetPhoneNumber=(value)=>
     {
         setPhoneNumber(value);
         console.log(PhoneNumber);
-      }
+      };
       const handleSetSexe=(value)=>
     {
         setSexe(value);
         console.log(Sexe);
-      }
+      };
       handleSetAge=(value)=>
     {
         setAge(value);
         console.log(Age);
-    }
+    };
 
       const [showDiv, setDiv] = useState(false);
 
@@ -45,8 +45,8 @@ const Signupcomp = () => {
       };
 
   return (
-    <div className='flex flex-col items-end'>
-        {!showDiv && <div className='space-y-6 p-16'>
+    <div className='flex flex-col items-end font-[StemRegular]'>
+        {!showDiv && <div className='p-16 space-y-6'>
             <Input 
              setValue={handleSetUserName}
              placeholder="UserName"
@@ -72,7 +72,7 @@ const Signupcomp = () => {
          Next
          </button> 
          </div>}
-         {showDiv && <div className='space-y-6 p-16'>
+         {showDiv && <div className='p-16 space-y-6'>
             <p className='lg:w-[450px]  mx-auto text-left w-full text-[#040054] sm:text-[50px] text-[100px] font-bold font-[Stem-Bold] '>
                 Sign Up
             </p>

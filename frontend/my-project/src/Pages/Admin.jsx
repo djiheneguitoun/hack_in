@@ -30,11 +30,11 @@ function Admin({ doctors}) {
     };
 
     return (
-        <div className="overflow-x-hidden BackAdmin">
+        <div className="overflow-x-hidden BackAdmin font-[StemRegular]">
             <NavAdmin/>
             <div className="flex items-center justify-center py-16">
                 <div className="flex flex-col space-y-4 bg-gray bg-opacity-60 w-[85%] p-10">          
-                    <div className="flex flex-row justify-between px-10 font-bold text-x-[32px] text-blue">
+                    <div className="flex flex-row justify-between px-10 font-[Stem-Bold] text-blue">
                         <span>Doctor</span>
                         <span>Email</span>
                         <span>Phone Number</span>
