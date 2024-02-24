@@ -10,7 +10,7 @@ const userSchema = new Schema({
     },
     experience:{
         type: String,
-        required: false,
+        default: null ,
     },
     email: {
         type: String,
