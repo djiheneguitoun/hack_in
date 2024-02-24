@@ -29,7 +29,7 @@ function NavBar() {
             <img src={LogoNav} alt="LogoNav" className="w-[10%]" />
             <div className="hidden space-x-5 lg:items-center lg:flex-row lg:flex md:flex md:flex-row sm:flex sm:flex-row md:items-center sm:items-center">
                 <span className="font-[Stem-Bold] cursor-pointer" onClick={handleLogin}> Log In </span>
-                <button className="px-4 py-2 text-white bg-blue font-[Stem-Medium] cursor-pointer"> Sign Up </button>
+                <button className="px-4 py-2 text-white bg-blue font-[Stem-Medium] cursor-pointer" onClick={handleSignUp}> Sign Up </button>
             </div>
 
             <div className="relative flex flex-col items-end lg:hidden md:hidden sm:hidden" onClick={handleClick}>
@@ -40,7 +40,7 @@ function NavBar() {
                 </div>
                 {show ? (
                     <div className="absolute z-40 flex flex-col items-center justify-center w-auto py-10 pl-8 space-y-4 transition bg-white duration-400 md:hidden lg:hidden sm:hidden">
-                        <button className="w-32 px-6 py-2 text-white bg-blue">Sign Up</button>
+                        <button className="w-32 px-6 py-2 text-white bg-blue" onClick={handleSignUp}>Sign Up</button>
                         <span onClick={handleLogin}>Log In</span>
                     </div>) : null}
             </div>
