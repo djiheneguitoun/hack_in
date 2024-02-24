@@ -3,6 +3,7 @@ import '../index.css'
 import Input from '../Components/Input';
 
 const Signup = () => {
+  
     const handleSetEmail = (value) => {
         console.log(email)
         setEmail(value);

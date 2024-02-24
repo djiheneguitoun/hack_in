@@ -9,7 +9,7 @@ function OnLine({patients}) {
                 <PatientOnLine name={patient.name} date={patient.date} hour1={patient.hour1} hour2={patient.hour2}                    
                 />
             </div>
-        ));
+        )); 
     };
 
     return (

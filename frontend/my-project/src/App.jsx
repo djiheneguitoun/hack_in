@@ -13,10 +13,18 @@ import DoctorProfile2 from './Components/DoctorProfile2';
 import Settings from './Pages/Settings';
 import Login from './Pages/login';
 import Signup from './Pages/Signup'
+import Lending from './Pages/Lending';
 
 
 
 export default function App() {
+
+  const comments = [
+    {Title:"Anxiety Disorders", Content:"Anonymous and unseen, a soul wrestled with silent storms. Through hushed conversations with an unseen ally, anxiety's grip slowly loosened. In the cocoon of anonymity, a quiet triumph unfolded."},
+    {Title:"Anxiety Disorders", Content:"Anonymous and unseen, a soul wrestled with silent storms. Through hushed conversations with an unseen ally, anxiety's grip slowly loosened. In the cocoon of anonymity, a quiet triumph unfolded."},
+    {Title:"Anxiety Disorders", Content:"Anonymous and unseen, a soul wrestled with silent storms. Through hushed conversations with an unseen ally, anxiety's grip slowly loosened. In the cocoon of anonymity, a quiet triumph unfolded."},
+    {Title:"Anxiety Disorders", Content:"Anonymous and unseen, a soul wrestled with silent storms. Through hushed conversations with an unseen ally, anxiety's grip slowly loosened. In the cocoon of anonymity, a quiet triumph unfolded."},
+  ];
 
   const doctors = [
     { name: "Amina", email: "la_malek@esi.dz", number: "0658211670" },
@@ -78,6 +86,7 @@ export default function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/settings" element={<Settings/>}/>
+          <Route path="/lending" element={<Lending comments={comments}/>}/>
       </Routes>
     </Router>
 
