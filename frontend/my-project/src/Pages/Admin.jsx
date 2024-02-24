@@ -30,7 +30,7 @@ function Admin({ doctors}) {
     };
 
     return (
-        <div className="BackAdmin">
+        <div className="overflow-x-hidden BackAdmin">
             <NavAdmin/>
             <div className="flex items-center justify-center py-16">
                 <div className="flex flex-col space-y-4 bg-gray bg-opacity-60 w-[85%] p-10">          
@@ -52,7 +52,7 @@ function Admin({ doctors}) {
                     
                     {showPopUp2 && 
                     <div>
-                        <PopUpDelete texte={"Congrats the doctor by sending him an email"} onClose2={handleDelete}/>
+                        <PopUpDelete texte={"Are you sure you want to delete Doctor  Nesrine_ben from the list of doctors ?"} onClose2={handleDelete}/>
                     </div>
                     }
                 </div>  

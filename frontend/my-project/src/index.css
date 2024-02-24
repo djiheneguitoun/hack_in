@@ -50,6 +50,24 @@ body
     width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
 }
 
+.BackDoctor2 {
+    background-image: url('./Img/Doctor background 2.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Assurez-vous que l'image ne se répète pas */
+    background-position: center; /* Centrez l'image */
+    height: 100vh; /* Prendre la totalité de la hauteur de la fenêtre */
+    width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
+}
+
+.BackDoctor3 {
+    background-image: url('./Img/BG 3 DOCTOR.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Assurez-vous que l'image ne se répète pas */
+    background-position: center; /* Centrez l'image */
+    height: 100vh; /* Prendre la totalité de la hauteur de la fenêtre */
+    width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
+}
+
 @media (max-width: 639px) {
     .BackAcceuil {
         background-image: url('./Img/Background mobile.png');

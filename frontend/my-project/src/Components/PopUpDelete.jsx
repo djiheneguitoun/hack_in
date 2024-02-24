@@ -18,7 +18,7 @@ function PopUpDelete({ texte, onClose2 }) {
                 <span className="px-2"> {texte} </span>
                 <textarea
                     type="text"
-                    placeholder="Write the email here"
+                    placeholder="Write down the issue with pdf file "
                     className="flex-grow h-auto px-4 py-4 bg-gray rounded-lg focus:outline-0 w-[100%]"
                 />
                 <div className="flex flex-row w-[100%] justify-between">
