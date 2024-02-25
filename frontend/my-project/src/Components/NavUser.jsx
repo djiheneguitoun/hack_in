@@ -18,9 +18,7 @@ function NavUser() {
     const handleAppointement= () => {
         navigate('/user/appointement');
     }
-    const handleExperience = () => {
-        navigate('/user/experience');
-    }
+
     const handleProfile = () => {
         navigate('/user/profile');
     }
@@ -33,7 +31,7 @@ function NavUser() {
                 <span className="z-50 cursor-pointer" onClick={handleHome}> Home </span>
                 <span className="z-50 cursor-pointer" onClick={handleDoctors}> Doctors </span>
                 <span className="z-50 cursor-pointer" onClick={handleAppointement}> Appointement </span>
-                <span className="z-50 cursor-pointer" onClick={handleExperience}> Experiences </span>
+                <span className="z-50 cursor-pointer"> Experiences </span>
                 <span className="z-50 cursor-pointer" onClick={handleProfile}> Pofile </span>
                 <button className="px-5 py-2 text-white bg-blueLight bg-opacity-17" onClick={handleLogout}> Log out </button>
             </div>

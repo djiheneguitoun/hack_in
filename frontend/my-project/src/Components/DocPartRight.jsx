@@ -2,7 +2,7 @@ import React from "react";
 
 function DocPartRight() {
     return (
-        <div className="px-16 w-[50%] py-10 font-[StemRegular]">
+        <div className="px-16 lg:w-[55%] py-10 font-[StemRegular] md:w-[55%] sm:w-[80%] w-[100%] mx-auto">
             <div className="w-[100%] mt-2">
                 <span>CCP Number</span>
                 <input className="w-[100%] bg-LightGreen p-4 rounded-md mt-2" placeholder="144676898079888888978">
@@ -21,7 +21,7 @@ function DocPartRight() {
 
                 </textarea>
             </div>
-            <div className="w-[100%] bg-LightGreen p-4 rounded-md mt-2 text-center font-bold text-2xl text-blue text-opacity-30">
+            <div className="w-[100%] bg-LightGreen p-4 rounded-md mt-2 text-center font-bold text-2xl text-blue">
                 Save
             </div>
 

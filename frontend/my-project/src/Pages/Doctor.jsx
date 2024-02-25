@@ -9,11 +9,11 @@ function Doctor({onsites, onlines}) {
     return (
         <div className="overflow-x-hidden BackDoctor font-[StemRegular]">
             <NavDoctor/>
-            <div className="overflow-y-auto">
-                <div className="flex flex-col items-center ">
+            <div className="">
+                <div className="flex items-center justify-center">
                     <OnSite patients={onsites}/>
                 </div> 
-                <div className="flex flex-col items-center ">
+                <div className="flex items-center justify-center">
                     <OnLine patients={onlines}/>
                 </div>       
             </div>

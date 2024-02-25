@@ -9,20 +9,20 @@ function Doctor2() {
     const [date, setDate] = useState(null);
 
     const onChange = date => {
-      setDate(date);
-      onDateSelect(date); 
-  
+        setDate(date);
+        onDateSelect(date);
+
     };
 
-    return(
+    return (
         <div className="overflow-x-hidden BackDoctor2 font-[StemRegular]">
-            <NavDoctor/>
-            <div className="flex flex-col items-center p-20">
-                
-                <div className=" w-[40%]">
-                    <span className="text-2xl font-bold text-blue"> Selected Date </span>
+            <NavDoctor />
+            <div className="lg:w-[40%] md:w-[60%] sm:w-[70%] w-[80%] mx-auto">
 
-                    <div className="bg-LightGreen w-[100%] rounded p-4 mb-8 mt-4">
+                <div className="w-[100%]">
+                    <span className="text-xl font-bold text-blue"> Selected Date </span>
+
+                    <div className="p-4 mt-4 mb-8 rounded bg-LightGreen">
                         <DatePicker
                             selected={date}
                             onChange={onChange}
@@ -32,31 +32,31 @@ function Doctor2() {
                             dateFormat="dd/MM/yyyy" // Format de la date ici
                             className="outline-none bg-LightGreen"
                         />
-                    </div>        
+                    </div>
                 </div>
-                
-            <div className="w-[40%]">
-                <span className="text-2xl font-bold text-blue"> Time Slots </span>    
 
-                <div className="flex flex-row mt-4 bg-LightGreenitems-center">
-                    <input className="p-4 text-blue text-opacity-30 bg-LightGreen  w-[100%] " placeholder=" start date : end date "></input>
+                <div className="w-[100%]">
+                    <span className="text-xl font-bold text-blue"> Time Slots </span>
+
+                    <div className="flex flex-row mt-4 bg-LightGreenitems-center">
+                        <input className="p-4 text-blue text-opacity-30 bg-LightGreen w-[100%] " placeholder=" start date : end date "></input>
+                    </div>
                 </div>
-            </div>
-            
-            <div className="p-4 bg-LightGreen w-[40%] cursor-pointer mt-4 mb-8 text-center">
-                <span className="text-xl font-bold text-blue text-opacity-30"> Add this slot </span>
-            </div>
-            
-            <div className="p-4 bg-LightGreen w-[40%] items-center mt-8 cursor-pointer text-center">
-                <span className="text-2xl font-bold text-blue text-opacity-30 "> Save </span>
+
+                <div className="p-4 bg-LightGreen w-[100%] cursor-pointer mt-4 mb-8 text-center">
+                    <span className="font-bold t text-blue"> Add this slot </span>
+                </div>
+
+                <div className="p-4 bg-LightGreen w-[100%] items-center cursor-pointer text-center">
+                    <span className="font-bold text-blue "> Save </span>
+                </div>
+
+
             </div>
 
 
         </div>
-   
-            
-        </div>
-        
+
     );
 }
 
