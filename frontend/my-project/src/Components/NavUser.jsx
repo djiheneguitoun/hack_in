@@ -25,7 +25,6 @@ function NavUser() {
 
     return (
         <div className="flex flex-row items-center justify-between px-16 pt-6 lg:px-16 md:px-16 sm:px-16 font-[StemRegular]">
-            {/* <div className="text-green"> Logo </div> */}
             <img src={LogoNav} alt="LogoNav" className="w-[10%]"/>
             <div className="flex flex-row items-center justify-between space-x-10">
                 <span className="z-50 cursor-pointer" onClick={handleHome}> Home </span>
