@@ -96,6 +96,10 @@ body
     width: 100vw; /* Prendre la totalité de la hauteur de la fenêtre */
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 @media (max-width: 639px) {
     .BackAcceuil {
         background-image: url('./Img/Background mobile.png');

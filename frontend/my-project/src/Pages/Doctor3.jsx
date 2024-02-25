@@ -9,7 +9,7 @@ function Doctor3() {
     return(
         <div className="BackDoctor3 font-[StemRegular]">
             <NavDoctor/>
-            <div className="flex flex-row justify-between">
+            <div className="lg:flex-row lg:flex md:flex md:flex-row">
                 <DocPartLeft/>
                 <DocPartRight/>  
             </div>

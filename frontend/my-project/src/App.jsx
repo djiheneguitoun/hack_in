@@ -20,6 +20,10 @@ export default function App() {
   const doctors = [
     { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" },
     { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" },
+    { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" },
+    { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" },
+    { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" },
+    { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" },
     { name: "Nesrine", email: "la_malek@esi.dz", number: "0658211670" }
   ];
 
