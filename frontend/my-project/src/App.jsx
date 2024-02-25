@@ -31,6 +31,8 @@ export default function App() {
     { name: "Amina", date: "12-02-2003", hour1: "10:00h", hour2: "12:00h" },
     { name: "Amina", date: "12-02-2003", hour1: "10:00h", hour2: "12:00h" },
     { name: "Amina", date: "12-02-2003", hour1: "10:00h", hour2: "12:00h" },
+    { name: "Amina", date: "12-02-2003", hour1: "10:00h", hour2: "12:00h" },
+    { name: "Amina", date: "12-02-2003", hour1: "10:00h", hour2: "12:00h" },
     { name: "Amina", date: "12-02-2003", hour1: "10:00h", hour2: "12:00h" }
   ];
 

@@ -17,7 +17,7 @@ function Doctor2() {
     return (
         <div className="overflow-x-hidden BackDoctor2 font-[StemRegular]">
             <NavDoctor />
-            <div className="lg:w-[40%] md:w-[60%] sm:w-[70%] w-[80%] mx-auto">
+            <div className="lg:w-[40%] md:w-[60%] sm:w-[70%] w-[80%] mx-auto py-10">
 
                 <div className="w-[100%]">
                     <span className="text-xl font-bold text-blue"> Selected Date </span>

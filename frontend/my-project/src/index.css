@@ -100,10 +100,22 @@ body
     display: none;
 }
 
+.navDoctor {
+    position: fixed; /* Position fixe */
+    width: 100%; /* Largeur de la barre de navigation */
+    z-index: 999; /* Assure que la barre de navigation reste au-dessus du contenu */
+}
+
 @media (max-width: 639px) {
     .BackAcceuil {
         background-image: url('./Img/Background mobile.png');
         background-size: cover;
+    }
+
+    .navDoctor {
+        position: fixed; /* Position fixe */
+        width: 100%; /* Largeur de la barre de navigation */
+        z-index: 999; /* Assure que la barre de navigation reste au-dessus du contenu */
     }
 }
 
